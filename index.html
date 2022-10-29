@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tailwind.css">
+  <title>Tailwind Landing Page</title>
+</head>
+<body class="overflow-x-hidden">
+  <div class="bg-cover relative md:h-[50%] lg:h-[60%] md:pb-48" style="background-image: url('img/image\ 1bg.jpg')">
+    <!-- navbar -->
+    <!-- <div class="flex justify-between container mx-auto p-4 lg:px-7 text-white">
+      <div class="text-3xl font-bold sm:hidden">
+        trxvl
+      </div>
+      <div class="flex gap-5 sm:hidden">
+        <div>Home</div>
+        <div>Stays</div>
+        <div>Flights</div>
+        <div>packages</div>
+        <div>Sign Up</div>
+      </div>
+    </div> -->
+    <!-- <div class="flex items-center lg:hidden md:hidden">
+      <div class="p-4 space-y-2 rounded">
+        <span class="block w-5 h-0.5 bg-slate-100"></span>
+        <span class="block w-8 h-0.5 bg-slate-100"></span>
+        <span class="block w-5 h-0.5 bg-slate-100"></span>
+      </div>
+      <span class="font-semibold text-3xl text-white mx-auto">
+        trxvl.
+      </span>
+    </div> -->
+    <div class="w-full text-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+      <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-2">
+        <div class="p-4 flex flex-row items-center">
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <div class="p-4 space-y-2 rounded">
+              <span class="block w-5 h-1 bg-slate-100 rounded-lg"></span>
+              <span class="block w-8 h-1 bg-slate-100 rounded-lg"></span>
+              <span class="block w-5 h-1 bg-slate-100 rounded-lg"></span>
+            </div>
+          </button>
+          <a href="#" class="text-3xl lg:text-2xl mx-auto font-bold tracking-widest text-white rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">trxvl.</a>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+          <a class="px-4 py-2 mt-2 text-sm font-semibold dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-white border-b-2 hover:text-white" href="#">Home</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4" href="#">Stays</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4" href="#">Flights</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4" href="#">Packages</a>
+          <a class="px-4 py-2 mt-2 text-sm font-semibold dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4" href="#">Sign Up</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Section start home -->
+    <section class=''>
+        <div class="container mx-auto px-7">
+          <div class="">
+            <!-- content -->
+            <div class="md:mt-12 mb-8">
+              <h2 class="w-full text-4xl md:text-4xl lg:text-5xl text-white font-bold">The Whole words<br/>awaits.</h2>
+            </div>
+            <!-- Desktop -->
+            <div class="relative hidden md:block">
+              <div class="inset-y-0 flex items-center pl-3 pointer-events-none">
+                <svg class="text-slate-300 absolute top-3 z-10 left-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <div class="absolute z-10 left-1/3 top-2.5 flex items-center cursor-pointer">
+                  <svg class="text-slate-200 z-10 inset-y-0" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <span class="text-slate-200 text-md pl-2 cursor-pointer">Check in</span>
+                </div>
+                <div class="absolute z-10 right-1/3 top-3 flex items-center text-slate-200 text-sm cursor-pointer">
+                  <svg class="text-slate-200 z-10 inset-y-0" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <span class="text-slate-200 text-md pl-2 cursor-pointer">Check out</span>
+                </div>
+                <div class="flex absolute items-center right-32 top-2.5 z-10 md:hidden lg:flex">
+                  <svg class="text-slate-200" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  <span class="text-md text-slate-200 px-2">1 Room, 2 adults</span>
+                </div>
+                <div>
+                  <button class="bg-white text-blue-500 py-2 px-7 absolute top-[6px] right-4 z-10 rounded-full text-sm font-semibold">Search</button>
+                </div>
+              </div>
+              <input type="text" placeholder="search" class="backdrop-blur-xl bg-white/20 rounded-lg p-3 w-full outline-none placeholder:text-slate-300 pl-12 text-white">
+            </div>
+            <!-- Desktop -->
+            <div class="W-full pt-4 lg:mb-8 hidden md:block lg:block">
+              <h3 class="text-2xl font-bold py-3 text-white">Top Categories</h3>
+              <div class="w-full overflow-hidden">
+                <div class="no-scrollbar overflow-x-scroll lg:overflow-hidden flex md:justify-around lg:justify-around gap-5">
+                  <a href="#" class="carousel-item">
+                    <img class="pl-2" src="img/beach.svg" alt="beach">
+                    <p class="text-slate-200 pt-2 text-[14px]">Beaches</p>
+                  </a>
+                  <a href class="carousel-item">
+                    <img class="pl-2" src="img/dessert.svg" alt="desert">
+                    <p class="text-slate-200 pt-2 text-[14px]">Desserts</p>
+                  </a>
+                  <a href="#" class="carousel-item">
+                    <img class="pl-2" src="img/mountain.svg" alt="mountains">
+                    <p class="text-slate-200 pt-2 text-[14px]">Mountains</p>
+                  </a>
+                  <a href="#" class="carousel-item">
+                    <img class="pl-2" src="img/conic-cities.svg" alt="iconic cities">
+                    <p class="text-slate-200 pt-2 text-[14px]">Iconic Cities</p>
+                  </a>
+                  <a href="#" class="carousel-item">
+                    <img class="m-auto" src="img/houseboats.svg" alt="houseboats">
+                    <p class="text-slate-200 pt-2 text-[14px]">Houseboats</p>
+                  </a>
+                  <a href="#" class="carousel-item">
+                    <img class="m-auto" src="img/countryside.svg" alt="countryside">
+                    <p class="text-slate-200 pt-2 text-[14px]">Countryside</p>
+                  </a>
+                  <a href="#" class="carousel-item">
+                    <img class="m-auto" src="img/skiing.svg" alt="skiing">
+                    <p class="text-slate-200 pt-2 text-[14px]">Skiing</p>
+                  </a>
+                  <a href="#" class="carousel-item">
+                    <img class="m-auto" src="img/tropical.svg" alt="tropical">
+                    <p class="text-slate-200 pt-2 text-[14px]">Tropical</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile -->
+            <div class="mt-22 md:hidden">
+              <div class="relative">
+                <div class="inset-y-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="text-slate-300 absolute top-2 z-10 left-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+                <input type="text" placeholder="Search destinations" class="backdrop-blur-sm bg-white/30 rounded-full p-2 w-full outline-none placeholder:text-slate-300 placeholder:text-center">
+              </div>
+              <div class="my-2">
+                <div class="relative flex justify-between">
+                  <svg class="text-slate-300 absolute top-[7px] left-10 z-10 inset-y-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <svg class="text-slate-300 absolute top-[7px] right-10 z-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </div>
+                <input type="text" class="backdrop-blur-sm bg-white/30 rounded-full p-2 w-full outline-none align-center placeholder:text-center" placeholder="Check in | Check out">
+              </div>
+              <div class="relative">
+                <div class="flex pointers-events-none z-10">
+                  <svg class="text-slate-300 absolute bottom-[9px] left-10 z-10" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </div>
+                <input type="text" class="backdrop-blur-sm bg-white/30 rounded-full p-2 w-full outline-none placeholder:text-center text-white" placeholder="1 room, 2 adults">
+              </div>
+              <button class="text-white font-semibold bg-blue-500 hover:bg-blue-400 w-full rounded-full p-2 mt-4 mb-10">Search</button>
+            </div>
+            
+          </div>
+        </div>
+    </section>
+  </div>
+  <!-- Section end home -->
+  <!-- section 2 start -->
+  <section class="container mx-auto lg:px-7">
+    <div class="mx-auto px-7 lg:px-0 relative">
+      <!-- mobile -->
+      <div class="W-full pt-4 md:hidden">
+        <h3 class="text-2xl font-bold py-3">Top Categories</h3>
+        <div class="w-full overflow-hidden">
+          <div class="no-scrollbar hover:overflow-x-scroll flex md:justify-around lg:justify-around gap-5">
+            <a href="#" class="carousel-item">
+              <img class="pl-2" src="img/beach.svg" alt="beach">
+              <p class="text-slate-500 pt-2 text-[14px]">Beaches</p>
+            </a>
+            <a href class="carousel-item">
+              <img class="pl-2" src="img/dessert.svg" alt="desert">
+              <p class="text-slate-500 pt-2 text-[14px]">Desserts</p>
+            </a>
+            <a href="#" class="carousel-item">
+              <img class="pl-2" src="img/mountain.svg" alt="mountains">
+              <p class="text-slate-500 pt-2 text-[14px]">Mountains</p>
+            </a>
+            <a href="#" class="carousel-item">
+              <img class="pl-2" src="img/conic-cities.svg" alt="iconic cities">
+              <p class="text-slate-500 pt-2 text-[14px]">Iconic Cities</p>
+            </a>
+            <a href="#" class="carousel-item">
+              <img class="m-auto" src="img/houseboats.svg" alt="houseboats">
+              <p class="text-slate-500 pt-2 text-[14px]">Houseboats</p>
+            </a>
+            <a href="#" class="carousel-item">
+              <img class="m-auto" src="img/countryside.svg" alt="countryside">
+              <p class="text-slate-500 pt-2 text-[14px]">Countryside</p>
+            </a>
+            <a href="#" class="carousel-item">
+              <img class="m-auto" src="img/skiing.svg" alt="skiing">
+              <p class="text-slate-500 pt-2 text-[14px]">Skiing</p>
+            </a>
+            <a href="#" class="carousel-item">
+              <img class="m-auto" src="img/tropical.svg" alt="tropical">
+              <p class="text-slate-500 pt-2 text-[14px]">Tropical</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Desktop -->
+      <div class="w-full hidden md:block -top-[10rem] absolute z-10">
+        <div class="mb-4">
+          <h2 class="text-2xl font-bold text-white">Top Vacations</h2>
+        </div>
+        <div class="w-full overflow-hidden">
+          <div class="w-full flex gap-5 no-scrollbar hover:overflow-x-scroll cursor-pointer">
+            <img src="img/bali.jpg" alt="travel-visit" class="rounded-lg">
+            <img src="img/ireland.jpg" alt="travel-visit" class="rounded-lg">
+            <img src="img/paris.jpg" alt="travel-visit" class="rounded-lg">
+            <img src="img/sydney.jpg" alt="travel-visit" class="rounded-lg">
+          </div>
+        </div>
+      </div>
+      <!-- mobile -->
+      <div class="w-full pt-4 md:hidden">
+        <div class="mb-4">
+          <h2 class="text-2xl font-bold">Top Vacations</h2>
+        </div>
+        <div class="overflow-hidden w-full relative">
+          <div class="w-full flex gap-5 rounded-lg hover:overflow-x-scroll pr-8">
+            <img src="img/bali.jpg" alt="travel-visit" class="rounded-lg">
+            <img src="img/ireland.jpg" alt="travel-visit">
+            <img src="img/paris.jpg" alt="travel-visit">
+            <img src="img/sydney.jpg" alt="travel-visit">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 2 end -->
+  <!-- section 3 start -->
+  <section class="container mx-auto lg:px-7 mt-12 md:mt-32 lg:mt-32">
+    <div class="px-5">
+      <h2 class="text-2xl font-bold lg:mt-6 mb-3">Offers</h2>
+      <div class="md:flex sm:columns-2 sm:gap-3">
+        <div class="shadow-lg lg:flex-row md:flex md:flex-col sm:flex-col items-center bg-white rounded-xl max-w-xl lg:px-3 lg:py-2 lg:text-sm border mb-5">
+          <img src="img/offer-1.jpg" alt="" class="w-full lg:rounded-xl lg:object-cover md:rounded-t-xl rounded-t-xl">
+          <div class="p-4">
+            <p class="text-xs sm:text-md md:text-sm text-slate-500">Domestic Flights</p>
+            <h3 class="font-bold lg:text-sm md:text-lg text-1xl">Huge savings on flight with trxvl.</h3>
+            <p class="text-xs sm:text-sm md:text-md lg:text-sm text-slate-500">Book domestic flights starting @ just ₹1459</p>
+            <button class="bg-blue-700 text-white w-full rounded-full mt-4 p-2 hover:bg-blue-500 transtion duration-200 sm:w-24 md:mt-12">Book Now</button>
+          </div>
+        </div>
+        <div class="shadow-lg lg:flex-row md:flex md:flex-col sm:flex-col items-center bg-white rounded-xl max-w-xl lg:px-3 lg:py-2 lg:text-sm border mb-5">
+          <img src="img/offer-1.jpg" alt="" class="w-full lg:rounded-xl lg:object-cover md:rounded-t-xl rounded-t-xl">
+          <div class="p-4">
+            <p class="text-xs sm:text-md md:text-sm text-slate-500">Domestic Flights</p>
+            <h3 class="font-bold lg:text-sm md:text-lg text-1xl">Huge savings on flight with trxvl.</h3>
+            <p class="text-xs sm:text-sm md:text-md lg:text-sm text-slate-500">Book domestic flights starting @ just ₹1459</p>
+            <button class="bg-blue-700 text-white w-full rounded-full mt-4 p-2 hover:bg-blue-500 transtion duration-200 sm:w-24 md:mt-12">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 3 end -->
+  <!-- section 4 start -->
+  <section class="container mx-auto">
+    <div class="w-full pt-4 px-7">
+        <div class="mb-4">
+          <h2 class="text-2xl font-bold">Top Vacations</h2>
+        </div>
+        <div class="overflow-hidden w-full relative">
+          <div class="w-full flex gap-5 rounded-lg hover:overflow-x-scroll pr-8">
+            <img src="img/hotels.jpg" alt="travel-visit" class="rounded-lg">
+            <img src="img/apartments.jpg" alt="travel-visit">
+            <img src="img/resorts.jpg" alt="travel-visit">
+            <img src="img/villas.jpg" alt="travel-visit">
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- section 4 end -->
+  <!-- section 5 start -->
+  <section class="container mx-auto lg:px-7 mt-10">
+    <div class="px-5">
+      <div class="mb-12 w-full flex justify-center relative">
+        <img src="img/map.jpg" alt="map" class="rounded-lg w-full">
+        <div class="text-white absolute flex left-5 md:left-28 self-center flex-col w-80 lg:w-full">
+          <h3 class="lg:text-5xl md:text-2xl text-lg font-semibold">Plan you trip with travel<br/>expert</h3>
+          <p class="lg:text-lg text-xs md:mt-12 flex flex-wrap">Our professional advisors can craft your perfect itinerary</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 5 end -->
+  <!-- section 6 start -->
+  <section class="container mx-auto px-7 mt-10">
+    <div class="">
+      <div class="mb-2">
+        <h2 class="font-bold text-2xl">Connect with other travelers in our community</h2>
+      </div>
+      <div class="md:flex justify-center items-center md:gap-4 sm:columns-2 w-full">
+        <div class="w-full bg-white rounded-xl border border-gray-200 shadow-lg">
+          <a href="#">
+            <img src="img/india.jpg" alt="india" class="w-full p-3">
+          </a>
+          <div class="py-4 px-5">
+            <h3 class="text-xl">India</h3>
+            <p class="font-sm text-slate-500">Travel community</p>
+            <p class="font-sm text-slate-500">155,073 Travellers</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg border border-gray-200 shadow-lg my-5">
+          <a href="#">
+            <img src="img/travel-talk.jpg" alt="india" class="w-full p-3">
+          </a>
+          <div class="py-4 px-5">
+            <h3 class="text-xl">Travel Talk</h3>
+            <p class="font-sm text-slate-500">Travel community</p>
+            <p class="font-sm text-slate-500">155,073 Travellers</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg border border-gray-200 shadow-lg">
+          <a href="#">
+            <img src="img/beach.jpg" alt="india" class="w-full p-3">
+          </a>
+          <div class="py-4 px-5">
+            <h3 class="text-xl">beach</h3>
+            <p class="font-sm text-slate-500">Travel community</p>
+            <p class="font-sm text-slate-500">155,073 Travellers</p>
+          </div>
+        </div>
+        <div class="w-full bg-white rounded-lg border border-gray-200 shadow-lg lg:mt-0 mt-5">
+          <a href="#">
+            <img src="img/mountain.jpg" alt="india" class="w-full p-3">
+          </a>
+          <div class="py-4 px-5">
+            <h3 class="text-xl">Mountain</h3>
+            <p class="font-sm text-slate-500">Travel community</p>
+            <p class="font-sm text-slate-500">155,073 Travellers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 6 end -->
+  <!-- footer start -->
+  <footer class="bg-[#141414] pt-6 pb-4 w-full mt-9">
+    <div class="container mx-auto px-7 lg:px-7 md:px-7">
+      <div class="lg:inline-grid lg:grid-cols-5 lg:gap-32 md:columns-4">
+        <h3 class="text-2xl font-semibold text-white">trxvl</h3>
+        <div>
+          <div class="text-[#808080]">
+            <p>Seslendirme ve Alt Jazz</p>
+            <p>Media Market</p>
+            <p>Gillie</p>
+            <p>Size Last</p>
+          </div>
+        </div>
+        <div>
+          <div class="text-[#808080] my-3 lg:my-0">
+            <p>Self Betimes</p>
+            <p>Yatırımcı İlişkileri</p>
+            <p>Basal Himmler</p>
+          </div>
+        </div>
+        <div>
+          <div class="text-[#808080] mb-3">
+            <p>Yard Market</p>
+            <p>Is İmkanları</p>
+            <p>Car Tercihleri</p>
+          </div>
+        </div>
+        <div>
+          <div class="text-[#808080]">
+            <p>Hedge Karla</p>
+            <p>Mullein Koşulları</p>
+            <p>Autumnal Bulgier</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid lg:flex justify-between md:flex mt-8">
+        <div class="w-max-xs border p-2 w-32 text-center border-[#808080] text-[#808080] hover:border-blue-400 transtion duration-200 hover:text-white">
+          Helmet KOD
+        </div>
+        <div class="flex gap-2 mt-4">
+          <a href="#" class="w-max-xs">
+            <svg class="w-7 sm:w-5 sm:w-5 fill-[#808080] hover:fill-blue-400 transition duration-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+          </a>
+          <a href="https://facebook.com">
+            <svg class="w-7 sm:w-5 fill-[#808080] hover:fill-blue-400 transition duration-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://twitter.com">
+            <svg class="w-7 sm:w-5 fill-[#808080] hover:fill-blue-400 transition duration-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+          </a>
+          <a href="https://youtube.com">
+            <svg class="w-7 sm:w-5 fill-[#808080] hover:fill-blue-400 transition duration-200" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-3 border-[#808080]">
+    <p class="text-center text-[#808080] my-2 text-sm">©2022 | Abdurrachman Almanshurah</p>
+  </footer>
+  <!-- footer end -->
+</body>
+</html>

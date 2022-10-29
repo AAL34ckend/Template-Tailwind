@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="tailwind.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <title>Dashboard</title>
+</head>
+<body class="bg-gradient-to-r from-[#1c1e24] to-slate-800">
+   <div class="flex">
+      <aside class="w-64">
+         <div class="overflow-y-auto py-4 px-3 bg-transparent rounded dark:bg-gray-800">
+            <div class="py-5 px-4">
+               <a href="#" class="text-3xl text-white font-bold">trxvl</a>
+            </div>
+            <div class="py-5 px-4 group hover:bg-gradient-to-l from-[#434750] transition duration-200ms rounded-lg cursor-pointer">
+               <a href="#" class="text-gray-400 group-hover:text-white">
+                  <i class="fa-solid fa-boxes-stacked mr-2"></i>
+                  Dashboard
+               </a>
+            </div>
+            <div class="py-5 px-4 group hover:bg-gradient-to-l from-[#434750] transition duration-200ms rounded-lg cursor-pointer">
+               <a href="#" class="text-gray-400 group-hover:text-white">
+                  <i class="fa-solid fa-square-poll-vertical mr-2"></i>
+                  Campaign
+               </a>
+            </div>
+            <div class="py-5 px-4 group hover:bg-gradient-to-l from-[#434750] transition duration-200ms rounded-lg cursor-pointer">
+               <a href="#" class="text-gray-400 group-hover:text-white">
+                  <i class="fa-solid fa-chart-line mr-2"></i>
+                  Reports
+               </a>
+            </div>
+            <div class="py-5 px-4 group hover:bg-gradient-to-l from-[#434750] transition duration-200ms rounded-lg cursor-pointer">
+               <a href="#" class="text-gray-400 group-hover:text-white">
+                  <i class="fa-solid fa-chart-pie mr-2"></i>
+                  Analitics
+               </a>
+            </div>
+            <div class="py-5 px-4 group hover:bg-gradient-to-l from-[#434750] transition duration-200ms rounded-lg cursor-pointer">
+               <a href="#" class="text-gray-400 group-hover:text-white">
+                  <i class="fa-solid fa-inbox mr-2"></i>
+                  Inbox
+               </a>
+            </div>
+            <div class="py-5 px-4 group hover:bg-gradient-to-l from-[#434750] transition duration-200ms rounded-lg cursor-pointer">
+               <a href="#" class="text-gray-400 group-hover:text-white">
+                  <i class="fa-solid fa-gear mr-2"></i>
+                  settings
+               </a>
+            </div>
+         </div>
+      </aside>
+      <section class="w-9/12">
+         <div class="w-11/12 pt-8 mx-auto">
+            <div class="flex justify-between">
+               <span>
+                  <h2 class="text-3xl font-bold text-white">Dashboard</h2>
+                  <p class="text-slate-400">see your account information in here</p>
+               </span>
+               <span class="relative">
+                  <input type="text" placeholder="can't find something?search here" class="placeholder:text-sm px-3 py-2 rounded-lg bg-[#2E323C] outline-none text-white">
+                  <i class="fa-solid fa-magnifying-glass absolute right-3 top-3 text-slate-200"></i>
+               </span>
+               <span>
+                  <button class="px-6 py-3 text-slate-200 text-sm bg-gradient-to-r from-[#363E52] to-[#2B3242] rounded-lg">
+                     Make a product
+                     <i class="fa-solid fa-square-plus text-slate-200 ml-2"></i>
+                  </button>
+               </span>
+            </div>
+         </div>
+         <div class="mx-auto rounded-lg bg-[#2E323C] flex items-center justify-center w-11/12 mt-12">
+            <div class="w-1/2 lg:p-3">
+               <h3 class="text-3xl font-semibold text-white">Special Premium Account</h3>
+               <p class="text-slate-200 py-10 text-sm">
+                  With a special premium account, you can do very interesting things!
+                  By purchasing this account, special features will be activated for you that you will be amazed to see!
+               </p>
+               <button class="px-6 py-3 text-white text-sm bg-gradient-to-r from-[#363E52] to-[#2B3242] rounded-lg">
+                  Phurcase
+                  <i class="fa-sharp fa-solid fa-cart-plus ml-2"></i>
+               </button>
+               <button class="px-6 py-3 ml-2 text-white text-sm bg-gradient-to-r from-[#363E52] to-[#2B3242] rounded-lg">
+                  View features
+                  <i class="fa-solid fa-bolt text-slate-200 ml-2"></i>
+               </button>
+            </div>
+            <div class="py-3">
+               <img src="img/dash-image.png" alt="image">
+            </div>
+         </div>
+         <div class="w-11/12 mx-auto">
+            <div class="flex justify-between items-center mt-10">
+               <div class="bg-[#2E374B] rounded-lg flex">
+                  <div class="p-4">
+                     <img src="img/icons-1.svg" alt="icon see">
+                     <p class="text-slate-200 my-2 text-sm">all followers</p>
+                     <h3 class="text-2xl text-white font-semibold">1000</h3>
+                  </div>
+                  <div class="p-4">
+                     <div class="flex justify-around items-center">
+                        <svg width="30" height="18" viewBox="0 0 37 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M1.72677 5.05254L1.72677 14.4972C1.72677 15.8625 2.83355 16.9692 4.19882 16.9692L11.389 16.9692" stroke="#AF2B53" stroke-width="1.85404"/>
+                           <path d="M35.5444 1.50972L27.7804 9.48383C26.8099 10.4805 25.2085 10.4805 24.238 9.48383L18.2451 3.32881C17.2747 2.3321 15.6732 2.3321 14.7028 3.32881L2.04883 16.3251" stroke="#AF2B53" stroke-width="1.85404" stroke-linecap="round"/>
+                        </svg>
+                        <span class="text-white text-xl font-semibold">1.2%</span>
+                     </div>
+                     <p class="text-slate-200 my-2 text-sm">this month</p>
+                     <button class="text-white text-xl px-1 py-2 bg-[#077E71] rounded-lg">see info</button>
+                  </div>
+               </div>
+               <div class="bg-[#2E374B] rounded-lg flex">
+                  <div class="p-4">
+                     <img src="img/icons-2.svg" alt="icon see">
+                     <p class="text-slate-200 my-2 text-sm">total earning</p>
+                     <h3 class="text-2xl text-white font-semibold">125K</h3>
+                  </div>
+                  <div class="p-4">
+                     <div class="flex gap-2 items-center">
+                        <svg width="30" height="18" viewBox="0 0 37 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M35.3574 13.4266V3.98194C35.3574 2.61666 34.2506 1.50989 32.8853 1.50989H25.6952" stroke="#10AE9D" stroke-width="1.85404"/>
+                           <path d="M1.53973 16.9695L9.3038 8.99542C10.2743 7.99872 11.8757 7.99872 12.8462 8.99542L18.839 15.1504C19.8095 16.1471 21.4109 16.1471 22.3814 15.1504L35.0353 2.15417" stroke="#10AE9D" stroke-width="1.85404" stroke-linecap="round"/>
+                        </svg>
+                        <span class="text-white text-xl font-semibold">2.12%</span>
+                     </div>
+                     <p class="text-slate-200 my-2 text-sm">this month</p>
+                     <button class="text-white text-xl px-1 py-2 bg-[#077E71] rounded-lg">see info</button>
+                  </div>
+               </div>
+               <div class="bg-[#2E374B] rounded-lg flex">
+                  <div class="p-4">
+                     <img src="img/icons-1.svg" alt="icon see">
+                     <p class="text-slate-200 my-2 text-sm">all user</p>
+                     <h3 class="text-2xl text-white font-semibold">64K</h3>
+                  </div>
+                  <div class="p-4">
+                     <div class="flex gap-2 items-center">
+                        <svg width="30" height="18" viewBox="0 0 37 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M35.3574 13.4266V3.98194C35.3574 2.61666 34.2506 1.50989 32.8853 1.50989H25.6952" stroke="#10AE9D" stroke-width="1.85404"/>
+                           <path d="M1.53973 16.9695L9.3038 8.99542C10.2743 7.99872 11.8757 7.99872 12.8462 8.99542L18.839 15.1504C19.8095 16.1471 21.4109 16.1471 22.3814 15.1504L35.0353 2.15417" stroke="#10AE9D" stroke-width="1.85404" stroke-linecap="round"/>
+                        </svg>
+                        <span class="text-white text-xl font-semibold">12.5%</span>
+                     </div>
+                     <p class="text-slate-200 my-2">this month</p>
+                     <button class="text-white text-xl px-1 py-2 bg-[#077E71] rounded-lg">see info</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+</body>
+</html>
